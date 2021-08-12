@@ -1,4 +1,4 @@
-eaconst express = require("express");
+const express = require("express");
 const hbs = require("express-handlebars");
 
 const server = express();
