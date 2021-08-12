@@ -10,6 +10,7 @@ function updateJson(newFile, cb) {
       console.log("Sorry the file was not written");
     }
     console.log("File has been written successfully");
+    cb();
   });
 }
 
