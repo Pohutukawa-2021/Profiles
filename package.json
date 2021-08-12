@@ -1,0 +1,27 @@
+{
+  "name": "profiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pohutukawa-2021/Profiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pohutukawa-2021/Profiles/issues"
+  },
+  "homepage": "https://github.com/Pohutukawa-2021/Profiles#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.5"
+  }
+}
