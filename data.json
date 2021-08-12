@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alex",
+      "image": "/images/alex/jpg",
+      "place of birth": "Auckland, NZ",
+      "Bio": "suppppp <3"
+    }
+    {
+      "id": 2,
+      "name": "Caleb",
+      "image": "",
+      "place of birth": "Wellington, NZ",
+      "Bio": "FTP 420"
+    }
+  ]
+}
