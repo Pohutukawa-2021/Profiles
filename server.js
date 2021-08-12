@@ -1,5 +1,6 @@
 const express = require("express");
 const hbs = require("express-handlebars");
+const updateJson = require("./post-utils");
 
 const server = express();
 
@@ -12,6 +13,7 @@ server.engine("hbs", hbs({ extname: "hbs" }));
 server.set("view engine", "hbs");
 
 server.get("/", (req, res) => {
+  updateJson();
   res.render("home");
 });
 
