@@ -1,6 +1,8 @@
 const express = require("express");
 const hbs = require("express-handlebars");
 
+const { getData } = require('./get_utils')
+
 const server = express();
 
 //server config
@@ -12,7 +14,17 @@ server.engine("hbs", hbs({ extname: "hbs" }));
 server.set("view engine", "hbs");
 
 server.get("/", (req, res) => {
-  res.render("home");
+  getData((err, profiles) => {
+    if (err) {
+      res.status(500).send(err.message)
+      return
+    }
+    const viewData = {
+      profiles: profiles
+    }
+
+    res.render("home", profiles);
+  })
 });
 
 module.exports = {
