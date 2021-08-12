@@ -8,11 +8,11 @@ server.use(express.static("public"));
 server.use(express.urlencoded({ extended: false }));
 
 //handlebars config
-server.engine("handlebars", hbs({ extname: "hbs" }));
-server.set("view engine", "handlebars");
+server.engine("hbs", hbs({ extname: "hbs" }));
+server.set("view engine", "hbs");
 
 server.get("/", (req, res) => {
-  res.render("copy");
+  res.render("home");
 });
 
 module.exports = {
