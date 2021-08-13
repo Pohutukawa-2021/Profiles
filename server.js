@@ -1,6 +1,7 @@
 const express = require("express");
 const hbs = require("express-handlebars");
 const updateJson = require("./post-utils");
+const userRouter = require("./userRoute");
 
 const { getData } = require("./get_utils");
 
@@ -27,6 +28,8 @@ server.get("/", (req, res) => {
     res.render("home", profiles);
   });
 });
+
+server.use("/user", userRouter);
 
 module.exports = {
   server,
