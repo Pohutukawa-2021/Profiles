@@ -11,6 +11,9 @@ const { getData } = require("./get_utils");
 
 const server = express();
 
+//const routes
+const userRoutes = require("./userRoute");
+
 //server config
 server.use(express.static("public"));
 server.use(express.urlencoded({ extended: false }));
@@ -34,7 +37,11 @@ server.get("/", (req, res) => {
   });
 });
 
+<<<<<<< HEAD
 server.use("/user", userRouter);
+=======
+server.use("/user", userRoutes);
+>>>>>>> dede2456d038582d50e9e663fe45a91527557ab1
 
 module.exports = {
   server,
