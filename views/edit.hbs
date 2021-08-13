@@ -1,0 +1,33 @@
+<h1>Create New Team Member</h1>
+<form action="/user/edit/{{id}}" method="POST">
+  <div class="text-input">
+    <label for="name">First Name:</label>
+    <input type="text" id="first-name" name="name" value="{{name}}" />
+  </div>
+  <div class="text-input">
+    <label for="place of birth">Place of Birth:</label>
+    <input
+      type="text"
+      id="birthplace"
+      name="place of birth"
+      {{!-- value="{{place of birth}}" --}}
+    />
+  </div>
+  <div class="text-input">
+    <label for="Bio">Bio:</label>
+    <textarea id="bio" name="Bio" rows="2" cols="40" value="{{Bio}}"></textarea>
+  </div>
+  <div class="text-input">
+    <label for="profile-image">Profile Pic:</label>
+    <input
+      type="text"
+      id="profile-image"
+      name="image"
+      placeholder="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.basketballinsiders.com%2Fgrizzlies"
+      value="{{image}}"
+    />
+  </div>
+  <div id="submit-form">
+    <button>Create</button>
+  </div>
+</form>

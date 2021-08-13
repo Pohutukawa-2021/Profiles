@@ -28,6 +28,33 @@ router.post("/new", (req, res) => {
   });
 });
 
+router.get("/edit/:id", (req, res) => {
+  let viewData = {};
+  getData((err, data) => {
+    let searchedUser = data.users.find((user) => user.id == req.params.id);
+    viewData = { ...searchedUser };
+    console.log(viewData);
+    res.render("edit", viewData);
+  });
+});
+
+router.post("/edit/:id", (req, res) => {
+  let updatedUser = { ...req.body };
+  getData((err, data) => {
+    let newUserData = data.users.map((user) => {
+      let newUser = user;
+      if (user.id == req.params.id) {
+        newUser = { ...updatedUser };
+      }
+      return newUser;
+    });
+    let newFileData = { ...data, users: [...newUserData] };
+    updateJson(newFileData, () => {
+      res.redirect("/");
+    });
+  });
+});
+
 router.get("/:id", (req, res) => {
   getData((err, content) => {
     if (err) {
