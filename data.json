@@ -3,9 +3,9 @@
     {
       "id": 1,
       "name": "Alex",
-      "image": "/images/alex/jpg",
-      "place of birth": "Auckland, NZ",
-      "Bio": "suppppp <3"
+      "place_of_birth": "",
+      "bio": "",
+      "image": "/images/alex/jpg"
     },
     {
       "id": 2,
