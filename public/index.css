@@ -23,10 +23,12 @@ body {
 }
 h1 {
   text-align: center;
-  margin-right: 20%;
+  /* margin-right: 20%; */
+  padding-right: 60%;
+  font-size: 65px;
 }
 .user-button {
-  background-color: lightgrey;
+  /* background-color: #5dfdcb; */
   width: 17%;
   height: 300px;
   margin: 0px 10px;
@@ -36,8 +38,34 @@ h1 {
   border-radius: 8px;
 }
 
+.user-button:nth-child(2) {
+  background-color: #5dfdcb;
+}
+.user-button:nth-child(3) {
+  background-color: #7cc6fe;
+}
+.user-button:nth-child(4) {
+  background-color: #8789c0;
+}
+.user-button:nth-child(5) {
+  background-color: #5dfdcb;
+}
+.user-button:nth-child(6) {
+  background-color: #7cc6fe;
+}
+.user-button:nth-child(7) {
+  background-color: #8789c0;
+}
+.user-button:hover {
+  background-color: #f4f4f4;
+}
+.user-button:focus {
+  background-color: #f4f4f4;
+}
+
 .user-button p {
   padding-top: 90px;
+  font-size: 30px;
 }
 
 .new-profile-button {
