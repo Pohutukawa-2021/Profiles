@@ -1,11 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Alex",
-      "image": "/images/alex/jpg",
-      "place of birth": "Auckland, NZ",
-      "Bio": "suppppp <3"
+      "name": "Al",
+      "place of birth": "",
+      "Bio": "",
+      "image": "/images/alex/jpg"
     },
     {
       "id": 2,
@@ -14,19 +13,5 @@
       "place of birth": "Wellington, NZ",
       "Bio": "TP 420"
     },
-    {
-      "id": 3,
-      "name": "Dave",
-      "place of birth": "Auckland",
-      "Bio": "not much wbu",
-      "image": ""
-    },
-    {
-      "id": 4,
-      "name": "Louis",
-      "place of birth": "LouisLand",
-      "Bio": "Hi im Louis from LouisLand",
-      "image": ""
-    }
   ]
 }
