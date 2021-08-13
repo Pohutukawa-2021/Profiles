@@ -1,17 +1,25 @@
 {
   "users": [
     {
-      "name": "Al",
-      "place of birth": "",
-      "Bio": "",
+      "id": 1,
+      "name": "Alex",
+      "place_of_birth": "",
+      "bio": "",
       "image": "/images/alex/jpg"
     },
     {
       "id": 2,
       "name": "Caleb",
       "image": "",
-      "place of birth": "Wellington, NZ",
-      "Bio": "TP 420"
+      "place_of_birth": "Wellington, NZ",
+      "bio": "TP 420"
+    },
+    {
+      "id": 3,
+      "name": "Dave",
+      "place_of_birth": "Auckland",
+      "bio": "Clown",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Sir_Dave_Dobbyn%2C_April_2021.jpg"
     }
   ]
 }

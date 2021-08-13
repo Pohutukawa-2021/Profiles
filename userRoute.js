@@ -44,7 +44,8 @@ router.post("/edit/:id", (req, res) => {
     let newUserData = data.users.map((user) => {
       let newUser = user;
       if (user.id == req.params.id) {
-        newUser = { ...updatedUser };
+        newUser = {id: Number(req.params.id),
+           ...updatedUser };
       }
       return newUser;
     });
