@@ -28,4 +28,16 @@ router.post("/new", (req, res) => {
   });
 });
 
-router.get("/:id", (req, res) => {});
+router.get("/:id", (req, res) => {
+  getData((err, content) => {
+    if (err) {
+      res.status(500).send(err.message);
+      return;
+    }
+    const viewData = {
+      profile: content.users,
+    };
+    console.log(viewData.profile[req.params.id - 1]);
+    res.render("details", viewData.profile[req.params.id - 1]);
+  });
+});
