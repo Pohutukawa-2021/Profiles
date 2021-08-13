@@ -1,0 +1,107 @@
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin: 0rem 10rem;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  /* margin-right: 20%; */
+  padding-right: 60%;
+  font-size: 65px;
+}
+.user-button {
+  /* background-color: #5dfdcb; */
+  width: 17%;
+  height: 300px;
+  margin: 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 8px;
+}
+
+.user-button:nth-child(2) {
+  background-color: #5dfdcb;
+}
+.user-button:nth-child(3) {
+  background-color: #7cc6fe;
+}
+.user-button:nth-child(4) {
+  background-color: #8789c0;
+}
+.user-button:nth-child(5) {
+  background-color: #5dfdcb;
+}
+.user-button:nth-child(6) {
+  background-color: #7cc6fe;
+}
+.user-button:nth-child(7) {
+  background-color: #8789c0;
+}
+.user-button:hover {
+  opacity: 0.6;
+  filter: drop-shadow(0 0 0.4rem gray);
+}
+.user-button:focus {
+  opacity: 0.6;
+  filter: drop-shadow(0 0 0.4rem gray);
+}
+
+.user-button p {
+  padding-top: 90px;
+  font-size: 30px;
+}
+
+.new-profile-button {
+  border: 2px dashed black;
+  border-radius: 8px;
+  width: 17%;
+  height: 300px;
+  margin: 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.new-profile-button p {
+  padding-top: 90px;
+}
+/* 
+.home-container {
+  border: 1px solid black;
+  margin: 2rem 20rem;
+  padding: auto;
+  text-align: left;
+}
+
+.profile-box {
+  border: 1px solid blue;
+  width: 10rem;
+  padding: 60px;
+}
+.new-profile-button {
+  background-color: aquamarine;
+}
+
+.user-button {
+  background-color: bisque;
+  padding: 50px;
+} */

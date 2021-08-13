@@ -5,9 +5,15 @@ const router = express.Router();
 
 module.exports = router;
 
+
+router.get('/:id', (req, res) => {
+})
+
+
 router.get("/new", (req, res) => {
   res.render("create");
 });
+
 
 router.post("/new", (req, res) => {
   let newUser = { ...req.body };
