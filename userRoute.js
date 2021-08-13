@@ -15,5 +15,7 @@ router.post("/new", (req, res) => {
     if (err) {
       console.log("There was a problem with getting the data");
     }
+    let newData = { ...data, users: [...data.users, newUser] };
+    console.log(newData);
   });
 });
