@@ -1,13 +1,12 @@
 const express = require("express");
 const { getData } = require("./get_utils");
+const server = require('./server');
 
 const router = express.Router();
 
 module.exports = router;
 
 
-router.get('/:id', (req, res) => {
-})
 
 
 router.get("/new", (req, res) => {
@@ -25,3 +24,17 @@ router.post("/new", (req, res) => {
     console.log(newData);
   });
 });
+
+router.get('/:id', (req, res) => {
+  getData((err, content) => {
+    if (err) {
+      res.status(500).send(err.message)
+      return
+    }
+    const viewData = {
+      profile: content.users,
+    }
+    console.log(viewData.profile[req.params.id - 1])
+    res.render('details', viewData.profile[req.params.id - 1])
+  })
+})
