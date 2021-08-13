@@ -3,16 +3,23 @@
     {
       "id": 1,
       "name": "Alex",
-      "place_of_birth": "",
-      "bio": "",
+      "place_of_birth": "Auckland",
+      "Bio": "Hi I'm Alex",
       "image": "/images/alex/jpg"
     },
     {
       "id": 2,
       "name": "Caleb",
-      "image": "https://expertboxing.com/wp-content/uploads/2019/07/winning-boxing-gloves.jpg",
-      "place of birth": "Wellington, NZ",
-      "Bio": "Hey! im caleb, i love to walk n the beach at night nby myself and cry and listen to Frank Ocean. Sometimes when i look over the bays i se a beautiful orca whale smiling backat me"
+      "place_of_birth": "Wellington",
+      "Bio": "Hello I'm not Caleb",
+      "image": "https://expertboxing.com/wp-content/uploads/2019/07/winning-boxing-gloves.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dave Dobbyn",
+      "place_of_birth": "",
+      "Bio": "I do music",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Sir_Dave_Dobbyn%2C_April_2021.jpg"
     }
   ]
 }
