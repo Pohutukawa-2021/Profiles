@@ -3,16 +3,16 @@
     {
       "id": 1,
       "name": "Alex",
-      "image": "https://www.cheatsheet.com/wp-content/uploads/2021/06/rsz_dolly_parton-2.jpg",
+      "image": "/images/alex/jpg",
       "place of birth": "Auckland, NZ",
       "Bio": "suppppp <3"
     },
     {
       "id": 2,
       "name": "Caleb",
-      "image": "https://expertboxing.com/wp-content/uploads/2019/07/winning-boxing-gloves.jpg",
+      "image": "",
       "place of birth": "Wellington, NZ",
-      "Bio": "FTP 420"
+      "Bio": "TP 420"
     }
   ]
 }
