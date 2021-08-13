@@ -2,12 +2,12 @@
     <h1>Team Orca</h1>
     <div class="profile-box">
         {{!-- <div class="new-profile-button"> --}}
-            <a href="/" class="new-profile-button">
+            <a href="/user/new" class="new-profile-button">
             <p>+<br>Create Team<br>Member</p>
             </a>
         {{!-- </div>  --}}
             {{#each users}}
-            <a href="/" class="user-button">
+            <a href="/user/{{id}}" class="user-button">
                 <p>{{name}}</p>
                 </a>
             {{/each}}
