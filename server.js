@@ -1,6 +1,7 @@
 const express = require("express");
 const hbs = require("express-handlebars");
 const updateJson = require("./post-utils");
+const routes = require('./userRoute')
 
 const { getData } = require("./get_utils");
 
@@ -9,6 +10,7 @@ const server = express();
 //server config
 server.use(express.static("public"));
 server.use(express.urlencoded({ extended: false }));
+server.use('/user', routes)
 
 //handlebars config
 server.engine("hbs", hbs({ extname: "hbs" }));
