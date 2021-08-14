@@ -20,6 +20,13 @@
       "place_of_birth": "Auckland",
       "bio": "Clown",
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Sir_Dave_Dobbyn%2C_April_2021.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Louis Lising",
+      "place of birth": "Manila",
+      "Bio": "I love Coding",
+      "image": ""
     }
   ]
 }
