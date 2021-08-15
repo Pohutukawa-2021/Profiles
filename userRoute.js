@@ -64,8 +64,8 @@ router.get("/:id", (req, res) => {
     }
     const viewData = {
       profile: content.users,
-    };
-    console.log(viewData.profile[req.params.id - 1]);
-    res.render("details", viewData.profile[req.params.id - 1]);
-  });
-});
+    }
+    console.log(viewData.profile[req.params.id - 1])
+    res.render('details', viewData.profile[req.params.id - 1])
+  })
+})
