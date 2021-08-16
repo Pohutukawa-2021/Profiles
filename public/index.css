@@ -12,13 +12,14 @@ body {
 .app {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .profile-box {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: left;
-  margin: 0rem 10rem;
   padding: 0;
 }
 h1 {
@@ -29,9 +30,10 @@ h1 {
 }
 .user-button {
   /* background-color: #5dfdcb; */
-  width: 17%;
+  width: 50%;
   height: 300px;
-  margin: 0px 10px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -73,9 +75,9 @@ h1 {
 .new-profile-button {
   border: 2px dashed black;
   border-radius: 8px;
-  width: 17%;
+  width: 50%;
   height: 300px;
-  margin: 0px 10px;
+  margin-bottom: 1rem;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -181,4 +183,14 @@ img {
 
 #submit-form button:focus {
   outline: none;
+}
+
+@media (min-width: 48rem) {
+  .user-button {
+    width: 17%;
+  }
+
+  .new-profile-button {
+    width: 17%;
+  }
 }
